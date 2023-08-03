@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -rf usersdb.sqlite && jest --forceExit",
+    "test:coverage": "npm run test -- --coverage --forceExit",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.3.3"
+  }
+}
